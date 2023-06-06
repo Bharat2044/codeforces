@@ -1,7 +1,7 @@
 // Question Link: https://codeforces.com/group/MWSDmqGsZm/contest/326907/problem/D
 
 
-// Approach - 1: TC = O(max(l, r)), SC = O(1)
+// Approach - 1: TC = O(t * max(l, r)), SC = O(1)
 /*
 #include <iostream>
 using namespace std;
@@ -30,7 +30,7 @@ int main() {
 */
 
 
-// Approach - 2: TC = O(max(l, r)), SC = O(1)
+// Approach - 2: TC = O(t), SC = O(1)
 #include <iostream>
 using namespace std;
 
