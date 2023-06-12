@@ -16,13 +16,13 @@ int main() {
         string s;
         cin >> s;
         
-        // if zero or one character
+        // if odd number of character
         if(s.size() & 1) {     
             cout << "NO\n";
             continue;
         }
         
-        // if more than one character
+        // if even number of character
         bool flag = true;
         
         for(int i=0; i<s.size()/2; i++) {
