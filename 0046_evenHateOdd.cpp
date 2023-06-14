@@ -1,7 +1,7 @@
 // Question Link: https://codeforces.com/group/MWSDmqGsZm/contest/329103/problem/G
 
 
-// TC = O(n), SC = O(1)
+// TC = O(t*n), SC = O(1)
 #include <iostream>
 using namespace std;
 
