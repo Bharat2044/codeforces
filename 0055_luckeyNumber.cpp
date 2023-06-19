@@ -4,29 +4,35 @@
 // TC = O(max(a, b) * log(max(a, b))), SC = O(1)
 #include <iostream>
 using namespace std;
-
+ 
+bool isLuckeyNumber(int x) {
+    while(x > 0) {
+        if(x%10 != 4 && x%10 != 7)
+            return false;
+        
+        x /= 10;
+    }
+    
+    return true;
+}
+ 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    int a;
-    cin >> a;
+    int a, b;
+    cin >> a >> b;
     bool flag = true;
-
-    while(a > 0) {
-        if(a%10 != 4 || a%10 != 7) {
-            flag=false;
-            break;
+ 
+    for(int i=a; i<=b; i++) {
+        if(isLuckeyNumber(i)) {
+            cout << i << " ";
+            flag = false;
         }
-        
-        a /= 10;
     }
     
     if(flag)
-        cout << "Yes";
-    else
-        cout << "No";
+        cout << -1;
     
     return 0;
 }
-
