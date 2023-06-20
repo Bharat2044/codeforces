@@ -1,7 +1,7 @@
 // Question Link: https://codeforces.com/group/MWSDmqGsZm/contest/219774/problem/I
 
 
-// TC = O(n^2), SC = O(1)
+// TC = O(t * n^2), SC = O(1)
 #include <iostream>
 #include <climits>
 using namespace std;
